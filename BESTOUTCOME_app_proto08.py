@@ -181,7 +181,6 @@ def expert_question(question, retriever, documents, tokenizer, model, reranker, 
     except Exception as e:
         return f"[ERROR during generation: {e}]", top_docs, scores[:top_k]
 
-# Streamlit UI
 st.title("AI Expert Call Query Tool")
 
 st.markdown("""**Step 1:** Upload one or more expert call transcripts (PDF, TXT, or HTML).  
